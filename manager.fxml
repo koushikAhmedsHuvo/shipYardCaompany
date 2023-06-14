@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="487.0" prefWidth="634.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mypkg.ManagerController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="-1.0" prefHeight="76.0" prefWidth="632.0" style="-fx-background-color: blue;" text="Wastern Marine Shipyard Company" textFill="#f5e6e6">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Button layoutY="76.0" mnemonicParsing="false" onAction="#workerListButtonOnClick" prefHeight="25.0" prefWidth="98.0" text="Worker List" />
+      <Button layoutX="98.0" layoutY="76.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="139.0" text="Working Schedule" />
+      <Button layoutX="237.0" layoutY="76.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="111.0" text="Client List" />
+      <Button layoutX="346.0" layoutY="76.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="111.0" text="Inventory" />
+      <Button layoutX="452.0" layoutY="76.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="181.0" text="Act within Powers" />
+   </children>
+</AnchorPane>

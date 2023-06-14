@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="589.0" prefWidth="687.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mypkg.ManagerEmployeeController">
+   <children>
+      <TableView fx:id="tableView" layoutX="52.0" layoutY="75.0" prefHeight="241.0" prefWidth="621.0">
+        <columns>
+          <TableColumn fx:id="firstNameColumn" prefWidth="93.0" text="First Name" />
+          <TableColumn fx:id="lastNameColumn" prefWidth="106.0" text="Last Name" />
+            <TableColumn fx:id="dobColumn" prefWidth="102.0" text="Dob" />
+            <TableColumn fx:id="userIdColumn" prefWidth="141.0" text="UserId" />
+            <TableColumn fx:id="genderColumn" prefWidth="75.0" text="Gender" />
+            <TableColumn fx:id="salaryColumn" prefWidth="96.0" text="Salary" />
+        </columns>
+      </TableView>
+      <TextField fx:id="firstNameTextField" layoutX="101.0" layoutY="326.0" promptText="Enter First Name" />
+      <TextField fx:id="salaryTextField" layoutX="109.0" layoutY="374.0" promptText="Enter Salary" />
+      <DatePicker fx:id="dobDatePicker" layoutX="121.0" layoutY="419.0" promptText="Select Date" />
+      <Button layoutX="178.0" layoutY="509.0" mnemonicParsing="false" onAction="#addemployeeButtonOnClick" prefHeight="25.0" prefWidth="160.0" text="Add Employee" />
+      <Button layoutX="559.0" layoutY="522.0" mnemonicParsing="false" onAction="#backButtonOnClick" prefHeight="25.0" prefWidth="92.0" text="Back" />
+      <Label alignment="CENTER" layoutY="-1.0" prefHeight="61.0" prefWidth="643.0" style="-fx-background-color: blue;" text="Wastern Marine Shipyard Company" textFill="#e8d6d6">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <TextField fx:id="lastNameTextField" layoutX="277.0" layoutY="326.0" promptText="Enter Last Name" />
+      <TextField fx:id="idTextField" layoutX="295.0" layoutY="374.0" promptText="Enter Id" />
+      <RadioButton fx:id="maleRadioButton" layoutX="511.0" layoutY="423.0" mnemonicParsing="false" text="Male" />
+      <RadioButton fx:id="femaleRadioButton" layoutX="576.0" layoutY="423.0" mnemonicParsing="false" text="Female" />
+      <Label layoutX="397.0" layoutY="423.0" prefHeight="17.0" prefWidth="92.0" text="Enter Gender" />
+   </children>
+</AnchorPane>

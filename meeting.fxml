@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="527.0" prefWidth="654.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19" fx:controller="mypkg.MeetingController">
+   <children>
+      <Label alignment="CENTER" layoutY="1.0" prefHeight="60.0" prefWidth="654.0" style="-fx-background-color: blue;" text="Waster Marine Shipyard Company" textFill="#ebdcdc">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="230.0" layoutY="83.0" prefHeight="40.0" prefWidth="110.0" text="User Details">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TableView layoutX="101.0" layoutY="130.0" prefHeight="200.0" prefWidth="371.0">
+        <columns>
+          <TableColumn prefWidth="127.0" text="Name" />
+          <TableColumn prefWidth="88.0" text="User Id" />
+            <TableColumn prefWidth="123.0" text="Designation" />
+        </columns>
+      </TableView>
+      <Button layoutX="60.0" layoutY="421.0" mnemonicParsing="false" onAction="#backButtonOnClick" text="Back" />
+      <Button layoutX="538.0" layoutY="421.0" mnemonicParsing="false" onAction="#nextButtonOnClick" text="Next" />
+   </children>
+</AnchorPane>

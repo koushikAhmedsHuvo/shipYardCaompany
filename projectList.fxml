@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="580.0" prefWidth="768.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mypkg.ProjectListController">
+   <children>
+      <Label alignment="CENTER" layoutX="-1.0" layoutY="-3.0" prefHeight="74.0" prefWidth="807.0" style="-fx-background-color: blue;" text="Wastern Marine Shipyard Company" textFill="#d3c6c6">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="outputTextArea" layoutX="19.0" layoutY="79.0" prefHeight="227.0" prefWidth="764.0" style="-fx-border-color: blue;" />
+      <TextField fx:id="nameTextField" layoutX="183.0" layoutY="326.0" onMouseClicked="#nameTextFieldMouseButtonOnClick" />
+      <TextField fx:id="amountTextField" layoutX="183.0" layoutY="427.0" onMouseClicked="#amountTextFieldmouseButtonOnClick" />
+      <Label layoutX="46.0" layoutY="323.0" prefHeight="31.0" prefWidth="110.0" text="Enter Project name" />
+      <Label layoutX="52.0" layoutY="364.0" prefHeight="17.0" prefWidth="104.0" text="Enter Oder Date" />
+      <Label layoutX="38.0" layoutY="399.0" prefHeight="17.0" prefWidth="118.0" text="Enter Delivary Date" />
+      <Label layoutX="38.0" layoutY="431.0" prefHeight="17.0" prefWidth="118.0" text="Enter Oder Amount" />
+      <DatePicker fx:id="delivaryDateDatePicker" layoutX="183.0" layoutY="395.0" />
+      <DatePicker fx:id="OderDateDatePicker" layoutX="183.0" layoutY="360.0" />
+      <Button layoutX="171.0" layoutY="469.0" mnemonicParsing="false" onAction="#svaeInformationButtonOnClick" prefHeight="25.0" prefWidth="129.0" text="Save Information" />
+      <Button layoutX="171.0" layoutY="504.0" mnemonicParsing="false" onAction="#saveTxtFileButtonOnClick" prefHeight="25.0" prefWidth="118.0" text="Save as Text File'" />
+      <Button layoutX="171.0" layoutY="541.0" mnemonicParsing="false" onAction="#showInformationButtonOnClick" prefHeight="25.0" prefWidth="118.0" text="Show Information" />
+      <Button layoutX="697.0" layoutY="529.0" mnemonicParsing="false" onAction="#backButtonOnClick" text="Back" />
+   </children>
+</AnchorPane>

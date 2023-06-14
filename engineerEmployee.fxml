@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="isbinaryFileChkBox" prefHeight="692.0" prefWidth="795.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mypkg.EngineerEmployeeController">
+   <children>
+      <Label alignment="CENTER" layoutX="-3.0" layoutY="1.0" prefHeight="68.0" prefWidth="756.0" style="-fx-background-color: blue;" text="Wastern Marine Shirpyard Company" textFill="#dab0b0">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <TableView fx:id="TableView" layoutX="40.0" layoutY="79.0" prefHeight="200.0" prefWidth="580.0">
+        <columns>
+          <TableColumn fx:id="firstNameColumn" prefWidth="102.0" text="First Name" />
+          <TableColumn fx:id="lastNameColumn" prefWidth="101.0" text="Last Name" />
+            <TableColumn fx:id="dobColumn" prefWidth="106.0" text="Dob" />
+            <TableColumn fx:id="userIdColumn" prefWidth="65.0" text="User ID" />
+            <TableColumn fx:id="genderColumn" prefWidth="96.0" text="Gender" />
+            <TableColumn fx:id="salaryColumn" prefWidth="90.0" text="Salary" />
+        </columns>
+      </TableView>
+      <TextField fx:id="firstNameTextField" layoutX="40.0" layoutY="291.0" promptText="Enter First Name" />
+      <TextField fx:id="lastNameTextField" layoutX="220.0" layoutY="291.0" promptText="Enter Last Name" />
+      <TextField fx:id="userIdtextField" layoutX="40.0" layoutY="329.0" promptText="Enter Id" />
+      <TextField fx:id="salaryTextField" layoutX="220.0" layoutY="329.0" promptText="Enter Salary" />
+      <DatePicker fx:id="dobDatePicker" layoutX="393.0" layoutY="291.0" promptText="Select Dob" />
+      <Label layoutX="393.0" layoutY="333.0" prefHeight="25.0" prefWidth="88.0" text="Gender" />
+      <RadioButton fx:id="maleRadioButton" layoutX="460.0" layoutY="337.0" mnemonicParsing="false" text="Male" />
+      <RadioButton fx:id="femaleRadioButton" layoutX="524.0" layoutY="337.0" mnemonicParsing="false" text="Female" />
+      <Button layoutX="231.0" layoutY="380.0" mnemonicParsing="false" onAction="#addEmployeeButtonOnClick" prefHeight="25.0" prefWidth="165.0" text="Add Employee" />
+      <CheckBox fx:id="isTextFileChkBox" layoutX="154.0" layoutY="429.0" mnemonicParsing="false" text="save as text file" />
+      <CheckBox layoutX="367.0" layoutY="429.0" mnemonicParsing="false" text="save as binary file" />
+      <Button layoutX="261.0" layoutY="454.0" mnemonicParsing="false" onAction="#saveButtonOnClick" prefHeight="25.0" prefWidth="68.0" text="Save" />
+      <Button layoutX="367.0" layoutY="488.0" mnemonicParsing="false" onAction="#txtFileButtonOnClick" prefHeight="25.0" prefWidth="114.0" text="Read as text file" />
+      <Button layoutX="115.0" layoutY="488.0" mnemonicParsing="false" onAction="#binaryFileButtonOnClick" prefHeight="25.0" prefWidth="114.0" text="Read as binary file" />
+      <TextArea fx:id="outputTextArea" layoutX="51.0" layoutY="525.0" prefHeight="180.0" prefWidth="558.0" style="-fx-border-color: blue;" />
+      <Button layoutX="635.0" layoutY="671.0" mnemonicParsing="false" onAction="#backButtonOnClick" prefHeight="25.0" prefWidth="68.0" text="Back" />
+   </children>
+</AnchorPane>

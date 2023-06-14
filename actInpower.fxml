@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="551.0" prefWidth="780.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mypkg.ActInpowerController">
+   <children>
+      <Label alignment="CENTER" layoutX="1.0" layoutY="1.0" prefHeight="66.0" prefWidth="780.0" style="-fx-background-color: blue;" text="Wastern Marine Shipyard Company" textFill="#d7d0d0">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Button layoutY="67.0" mnemonicParsing="false" onAction="#eliminatedEmployeeButtonOnClick" text="Eliminated Employee" />
+      <Button layoutX="125.0" layoutY="67.0" mnemonicParsing="false" onAction="#appointedEmployeeButtonOnClick" text="Appointed Employee" />
+      <Button layoutX="381.0" layoutY="67.0" mnemonicParsing="false" onAction="#noticeButtonOnClick" prefHeight="25.0" prefWidth="69.0" text="Notice" />
+      <Button layoutX="253.0" layoutY="67.0" mnemonicParsing="false" onAction="#promotionEmployeeButtonOnClick" text="Promotion Employee" />
+      <Button layoutX="450.0" layoutY="67.0" mnemonicParsing="false" onAction="#meetingButtonOnClick" prefHeight="25.0" prefWidth="76.0" text="Meeting" />
+      <Button layoutX="681.0" layoutY="504.0" mnemonicParsing="false" onAction="#backButtonOnClick" prefHeight="25.0" prefWidth="69.0" text="Back" />
+   </children>
+</AnchorPane>

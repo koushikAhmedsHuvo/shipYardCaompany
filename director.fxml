@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="434.0" prefWidth="642.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mypkg.DirectorController">
+   <children>
+      <Label layoutX="-1.0" layoutY="1.0" prefHeight="103.0" prefWidth="644.0" style="-fx-background-color: blue;" text="    Wester Marine Shipyard Company" textFill="#f2dfdf">
+         <font>
+            <Font size="34.0" />
+         </font></Label>
+      <Button layoutY="104.0" mnemonicParsing="false" onAction="#employeeListButtonOnClick" prefHeight="25.0" prefWidth="125.0" text="Employee List" />
+      <Button layoutX="126.0" layoutY="104.0" mnemonicParsing="false" onAction="#revenueButtonOnClick" prefHeight="25.0" prefWidth="132.0" text="Revenue" />
+      <Button layoutX="258.0" layoutY="104.0" mnemonicParsing="false" onAction="#investorButtonOnClick" prefHeight="25.0" prefWidth="118.0" text="Investor" />
+      <Button layoutX="376.0" layoutY="104.0" mnemonicParsing="false" onAction="#projectListButtonOnClick" prefHeight="25.0" prefWidth="125.0" text="Project List" />
+      <Button layoutX="501.0" layoutY="104.0" mnemonicParsing="false" onAction="#actWithPowerButtonOnClick" prefHeight="25.0" prefWidth="143.0" text="Act With In Powers" />
+      <Button layoutX="534.0" layoutY="371.0" mnemonicParsing="false" onAction="#backButtonOnClick" prefHeight="25.0" prefWidth="82.0" text="Back" />
+   </children>
+</AnchorPane>
